@@ -1,0 +1,24 @@
+body {
+    max-width: 960px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.first_tile {
+    height: 310px;
+    max-width: 300px;
+    background-color: red;
+    margin-left: 20px;
+    float: left;
+    margin-bottom: 10px;
+}
+
+.tile {
+    background-color: lightblue;
+    margin-left: 20px;
+    height: 150px;
+    overflow: auto;
+    float: left;
+    max-width: 150px;
+    margin-bottom: 10px;
+}

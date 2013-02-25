@@ -1,0 +1,213 @@
+{% extends "base.html" %}
+
+{% block title %}
+	{{ blog_config.title }}
+{% endblock title %}
+
+{% block content %}
+<div class="" style="overflow: auto;">
+  <div class="first_tile">
+    FEATURED CONTENT
+    {{ posts_metadata[0].title }}
+  </div>
+  <div class="tile">
+    <p>
+    mlkkkkkkkkkkkkkkkkkkkkkk<br>
+    kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
+    </p>
+  </div>
+   <div class="tile">
+    <p>
+    mlkkkkkkkkkkkkkkkkkkkkkki
+    kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
+    </p>
+  </div>
+
+   <div class="tile">
+     <p>
+    mlkkkkkkkkkkkkkkkkkkkkkki
+    kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
+    </p>
+  </div>
+
+  <div class="tile">
+    <p>
+    mlkkkkkkkkkkkkkkkkkkkkkki
+    kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
+    </p>
+  </div>
+
+   <div class="tile">
+     <p>
+    mlkkkkkkkkkkkkkkkkkkkkkki
+    kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
+    </p>
+  </div>
+  <div class="tile">
+    <p>
+    mlkkkkkkkkkkkkkkkkkkkkkk<br>
+    kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
+    </p>
+  </div>
+   <div class="tile">
+    <p>
+    mlkkkkkkkkkkkkkkkkkkkkkki
+    kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
+    </p>
+  </div>
+
+   <div class="tile">
+     <p>
+    mlkkkkkkkkkkkkkkkkkkkkkki
+    kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
+    </p>
+  </div>
+
+  <div class="tile">
+    <p>
+    mlkkkkkkkkkkkkkkkkkkkkkki
+    kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
+    </p>
+  </div>
+
+   <div class="tile">
+     <p>
+    mlkkkkkkkkkkkkkkkkkkkkkki
+    kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
+    </p>
+  </div>
+   <div class="tile">
+     <p>
+    mlkkkkkkkkkkkkkkkkkkkkkki
+    kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
+    </p>
+  </div>
+
+  <div class="tile">
+    <p>
+    mlkkkkkkkkkkkkkkkkkkkkkki
+    kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
+    </p>
+  </div>
+
+   <div class="tile">
+     <p>
+    mlkkkkkkkkkkkkkkkkkkkkkki
+    kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
+    </p>
+  </div>
+
+   <div class="tile">
+     <p>
+    mlkkkkkkkkkkkkkkkkkkkkkki
+    kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
+    </p>
+  </div>
+
+  <div class="tile">
+    <p>
+    mlkkkkkkkkkkkkkkkkkkkkkki
+    kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
+    </p>
+  </div>
+
+   <div class="tile">
+     <p>
+    mlkkkkkkkkkkkkkkkkkkkkkki
+    kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
+    </p>
+  </div>
+
+   <div class="tile">
+     <p>
+    mlkkkkkkkkkkkkkkkkkkkkkki
+    kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
+    </p>
+  </div>
+
+  <div class="tile">
+    <p>
+    mlkkkkkkkkkkkkkkkkkkkkkki
+    kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
+    </p>
+  </div>
+
+   <div class="tile">
+     <p>
+    mlkkkkkkkkkkkkkkkkkkkkkki
+    kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
+    </p>
+  </div>
+
+
+   <div class="tile">
+     <p>
+    mlkkkkkkkkkkkkkkkkkkkkkki
+    kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
+    </p>
+  </div>
+
+   <div class="tile">
+     <p>
+    mlkkkkkkkkkkkkkkkkkkkkkki
+    kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
+    </p>
+  </div>
+
+  <div class="tile">
+    <p>
+    mlkkkkkkkkkkkkkkkkkkkkkki
+    kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
+    </p>
+  </div>
+
+   <div class="tile">
+     <p>
+    mlkkkkkkkkkkkkkkkkkkkkkki
+    kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
+    </p>
+  </div>
+
+
+   <div class="tile">
+     <p>
+    mlkkkkkkkkkkkkkkkkkkkkkki
+    kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
+    </p>
+  </div>
+
+   <div class="tile">
+     <p>
+    mlkkkkkkkkkkkkkkkkkkkkkki
+    kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
+    </p>
+  </div>
+
+  <div class="tile">
+    <p>
+    mlkkkkkkkkkkkkkkkkkkkkkki
+    kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
+    </p>
+  </div>
+
+   <div class="tile">
+     <p>
+    mlkkkkkkkkkkkkkkkkkkkkkki
+    kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
+    </p>
+  </div>
+
+
+
+</div>
+
+{% for post in posts_metadata[1:] %}
+
+{% if post.type != 'post' %}
+Image ?
+{% else %}
+	{{ post.title }}
+{% endif %}
+
+{% endfor %}
+{% endblock %}
