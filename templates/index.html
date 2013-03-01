@@ -7,32 +7,14 @@
 {% block content %}
 <div class="row">
     <div class="latest_tile">
-      post_metadata[1:]
-    </div>
-    <div class="tile">
-      Text
+        {{ render_post(posts_metadata[0]) }}
     </div>
 
-    <div class="tile">
-      Text
-    </div>
-
-    <div class="tile">
-      Text
-    </div>
-
-    <div class="tile">
-      Text
-    </div>
-
-    <div class="tile">
-      Text
-    </div>
-
-    <div class="tile">
-      Text
-    </div>
-
+    {% for post in posts_metadata[1:6] %}
+        <div class="tile">
+            {{render_post(post)}}
+        </div>
+    {% endfor %}
 </div>
 
 <div class="row">

@@ -36,6 +36,11 @@
         float: left;
     }
 
+    .tile img {
+        width: 100%;
+        height: 100%;
+    }
+
     .tile:hover {
         background-color: darkblue;
         -moz-transition: all 0.5s ease-in;
