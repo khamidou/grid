@@ -1,24 +1,51 @@
-body {
-    max-width: 960px;
-    margin: 0 auto;
-    margin-top: 10px;
-}
+@media all and (min-width: 960px) {
+    body {
+        max-width: 960px;
+        margin: 0 auto;
+        margin-top: 10px;
+        overflow: hide;
+    }
 
-.first_tile {
-    height: 310px;
-    max-width: 300px;
-    background-color: red;
-    margin-left: 20px;
-    float: left;
-    margin-bottom: 10px;
-}
+    .row {
+        overflow: auto;
+        margin-bottom: 10px;
+    }
 
-.tile {
-    background-color: lightblue;
-    margin-left: 20px;
-    height: 150px;
-    overflow: auto;
-    float: left;
-    max-width: 150px;
-    margin-bottom: 10px;
+    .latest_tile {
+        /*
+        height: 310px;
+        max-width: 300px;
+        margin-left: 20px;
+        float: left;
+        margin-bottom: 10px;
+        */
+        background-color: red;
+        height: 330px;
+        width: 340px;
+        min-width: 200px;
+        margin-bottom: 10px;
+        float: left;
+    }
+
+    .tile {
+        height: 160px;
+        background-color: lightblue;
+        width: 160px;
+        margin-left: 20px;
+        margin-bottom: 10px;
+        float: left;
+    }
+
+    .tile:hover {
+        background-color: darkblue;
+        -moz-transition: all 0.5s ease-in;
+        -webkit-transition: all 1s ease-in;
+        -o-transition: all 1s ease-in;
+        transition: all 1s ease-in;
+    }
+
+    .first_tile {
+        margin-left: 0px;
+    }
+
 }
